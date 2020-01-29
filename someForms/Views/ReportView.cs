@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using someForms.Model;
 
 namespace someForms.Views
 {
@@ -16,6 +17,12 @@ namespace someForms.Views
         public ReportView()
         {
             InitializeComponent();
+            BindingSource source = new BindingSource();
+            source.DataSource = typeof(ReportBase);
+            source.AddNew();
+
+            dataLayoutControl1.DataSource = source;
+            dataLayoutControl1.RetrieveFields();
         }
     }
 }

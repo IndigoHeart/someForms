@@ -37,6 +37,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.trackView1 = new someForms.Views.TrackView();
+            this.reportView1 = new someForms.Views.ReportView();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -44,13 +45,14 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.reportView1);
             this.panel1.Controls.Add(this.trackView1);
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(715, 450);
+            this.panel1.Size = new System.Drawing.Size(1074, 450);
             this.panel1.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -130,12 +132,19 @@
             this.trackView1.Size = new System.Drawing.Size(375, 353);
             this.trackView1.TabIndex = 2;
             // 
+            // reportView1
+            // 
+            this.reportView1.Location = new System.Drawing.Point(688, 25);
+            this.reportView1.Name = "reportView1";
+            this.reportView1.Size = new System.Drawing.Size(349, 285);
+            this.reportView1.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(715, 450);
+            this.ClientSize = new System.Drawing.Size(1074, 450);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -157,6 +166,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private Views.TrackView trackView1;
+        private Views.ReportView reportView1;
     }
 }
 

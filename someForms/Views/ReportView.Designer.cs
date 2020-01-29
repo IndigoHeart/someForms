@@ -29,18 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.mvvmContext1 = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext1)).BeginInit();
+            this.mvvmContext1 = new DevExpress.Utils.MVVM.MVVMContext(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // mvvmContext1
-            // 
-            this.mvvmContext1.ContainerControl = this;
-            this.mvvmContext1.ViewModelType = typeof(someForms.ViewModels.ReportViewModel);
             // 
             // dataLayoutControl1
             // 
@@ -60,6 +55,11 @@
             this.Root.Size = new System.Drawing.Size(522, 289);
             this.Root.TextVisible = false;
             // 
+            // mvvmContext1
+            // 
+            this.mvvmContext1.ContainerControl = this;
+            this.mvvmContext1.ViewModelType = typeof(someForms.ViewModels.ReportViewModel);
+            // 
             // ReportView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -67,9 +67,9 @@
             this.Controls.Add(this.dataLayoutControl1);
             this.Name = "ReportView";
             this.Size = new System.Drawing.Size(522, 289);
-            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mvvmContext1)).EndInit();
             this.ResumeLayout(false);
 
         }
